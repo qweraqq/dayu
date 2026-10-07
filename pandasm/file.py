@@ -218,7 +218,7 @@ class PandasmFile(DecompilerInputFile):
                         try_begin=labels[0],
                         try_end=labels[1],
                         handler_begin=labels[2],
-                        handler_end=labels[3],
+                        handler_end=labels[3] if len(labels) > 3 else None,
                     )
                     method.try_catch_regions.append(region)
                 # .catch — typed catch directive; not yet supported, skip silently for now.

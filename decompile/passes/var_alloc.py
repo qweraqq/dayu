@@ -1,6 +1,6 @@
 from decompile.ir.basicblock import IRBlock
 from decompile.ir.method import IRMethod
-from decompile.ir.nac import NAddressCodeType, UnknownNAC
+from decompile.ir.nac import NAddressCodeType, UnknownNAC, NAddressCode
 from decompile.method_pass import MethodPass
 
 
