@@ -38,3 +38,6 @@ class PandasmMethod:
         self.insns: typing.List[PandasmInsn] = []
         self.try_catch_regions: typing.List[PandasmTryCatchRegion] = []
         self._context = IRMethodContext(self)
+
+    def __str__(self):
+        return self.return_type + " " + self.name + " (" + self.args + " )"

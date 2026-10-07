@@ -3,3 +3,6 @@ class PandasmField:
         self.name = field_name
         self.type = field_type
         self.value = field_value
+
+    def __str__(self):
+        return self.type + " " + self.name + " :" + self.value
